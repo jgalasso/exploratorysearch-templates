@@ -97,7 +97,7 @@ function createCellDom(node_id, node, ext_filter_threshold) {
         ext_div.setAttribute("class", "extension-line hidden-line")
 
     const ext_p = document.createElement('p')
-    ext_p.innerText = "Extensions: " + node.ext
+    ext_p.innerText = "Matched snippets: " + node.ext
     ext_div.appendChild(ext_p)
     outer_div.appendChild(ext_div)
 
@@ -174,4 +174,3 @@ function loadGraph() {
         .then(result => result.json())
         .then(graph => initializeBoard(graph))
 }
-

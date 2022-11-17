@@ -62,12 +62,12 @@
                         <h3>Settings</h3>
                         <div id="checkbox-spacer"></div>
                         <div class="settings-element form-check form-switch">
-                            <input class="form-check-input" type="checkbox" id="switchIdentifiers" checked>
-                            <label class="form-check-label" for="switchIdentifiers">Show identifiers</label>
-                        </div>
-                        <div class="settings-element form-check form-switch">
                             <input class="form-check-input" type="checkbox" id="switchExtensions" checked>
                             <label class="form-check-label" for="switchExtensions">Show number of matched snippets</label>
+                        </div>
+                        <div class="settings-element form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="switchIdentifiers">
+                            <label class="form-check-label" for="switchIdentifiers">Show identifiers</label>
                         </div>
                         <div class="settings-element form-check form-switch">
                             <input class="form-check-input" type="checkbox" id="switchHeightLimit">
@@ -124,7 +124,7 @@
                                             <p id="current-id">---</p>
                                         </div>
                                         <div class="extension-line ">
-                                            <p>Number of matched snippets: </p>
+                                            <p>Matched snippets: </p>
                                             <p id="current-extensions">---</p><br>
                                         </div>
                                         <span class="monospaced"><p id="current-payload">---</p></span>
@@ -136,7 +136,7 @@
                     <br/>
 
                     <!-- Information about children and parents-->
-                    <h5>Closest concepts:</h5>
+                    <!--<h5>Closest concepts:</h5>-->
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="children-tab" data-bs-toggle="tab"
